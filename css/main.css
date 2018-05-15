@@ -1,0 +1,287 @@
+/*
+* @Author: yanh
+* @Date:   2018-05-08 14:48:09
+* @Last Modified by:   yanh
+* @Last Modified time: 2018-05-15 11:03:22
+*/
+
+/**
+ * 1. 样式都通过ID去限定
+ * 2. 尽可能多使用直接子代选择器
+ */
+
+
+/**
+ * 公共样式
+ */
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+input{outline:none} 
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.pr{
+	position: relative;
+}
+.pa{
+	position: absolute;
+}
+.tex-c{
+	text-align: center;
+}
+.tex-l{
+	text-align: left;
+}
+.tet-r{
+	text-align: right;
+}
+.bradius{
+	border-radius:0.2rem;
+}
+.maincolor{
+	color:#15BCD3;
+}
+section .panel-heading{
+    padding: .5rem .5rem;
+    background-color: transparent;
+
+}
+section .panel-title{
+    font-weight: bold;
+	font-size:1.4rem;
+	color: #666666;
+	
+}
+.panelnobottome{
+	margin-bottom: 0;
+	border-radius: 0;
+	border-top: 0;
+}
+/**
+ * 搜索框样式
+ */
+#search>div{
+	padding: 1rem;
+}
+#search>div>.wlz-input-group-addon
+{
+    border: 0;
+    background-color:transparent;
+}
+#search>div>.wlz-glyphicon{
+	color:#00ABFE;
+	top:0px;
+}
+#search>div>input{
+    border-radius: 2.5rem;
+    font-size: 1.48rem;
+    width: 100%;
+    display: block;
+    padding: 0.2rem 0 .1rem 3.6rem;
+    background: url(../img/fangdajing.png) 1rem .3rem no-repeat;
+    -webkit-background-size: 15px;
+    background-size: 25px;
+    float: right;
+    background-color: #EEF2F6;
+    border: 0;
+}
+/**
+ * 人气必玩
+ */
+#hot>.panel>.panel-heading>.panel-title>img{
+    vertical-align: bottom;
+    width: 4%;
+}
+#hot .spot-list {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    overflow-scrolling: touch;
+}
+#hot .spot-list>.spot-slide {
+	padding-top: .7rem;
+	padding-left: .7rem;
+    width: auto;
+    padding-bottom: .7rem;
+    white-space: nowrap;
+}
+
+#hot .spot-list>.spot-slide>a {
+    margin-right: 2%;
+    width: 38.4%;
+    display: inline-block;
+    text-decoration: none;
+}
+#hot .spot-list>.spot-slide>.list-wrap {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+#hot .spot-list .spot-slide .spot-info {
+    border-width: 0 1px 1px;
+    padding: 5px;
+}
+#hot .spot-list .spot-slide .spot-info p{
+	font-size:1rem;
+	color:#666666;
+}
+#hot .spot-list .spot-slide .spot-info span{
+	float: left;
+    color: #FF6600;
+    font-size: 1.5rem;
+}
+#hot .spot-list .spot-slide .spot-info span i:last-child{
+    font-size: 1.3rem;
+	font-style: normal;
+    color:#666666;
+}
+#hot .spot-list .spot-slide .list-wrap .spot-pic {
+    padding-bottom: 67.63%;
+    height: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/**	
+*精选主题
+*/
+#theme .iconHuadong {
+	overflow-x: scroll;
+    background-color: #fff;
+	white-space: nowrap;
+    width: auto;
+    font-size: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    padding: 5px 0 0 10px;
+    border-style: solid;
+    border-width: 1px 0 0;
+    -webkit-border-image: url(data:image/gif;base64,R0lGODlhBQAFAPABANra2v///yH5BAUHAAEALAAAAAAFAAUAAAIHhB9pGatnCgA7) 2 stretch;
+}
+ #theme .iconHuadong .theme-module {
+    display: inline-block;
+    width: 22.2%;
+    overflow: hidden;
+}
+ #theme .iconHuadong .theme-module a span {
+    overflow: hidden;
+    float: left;
+    width: 100%;
+    height: 8.5rem;
+    text-align: center;
+    font-size: .24rem;
+    color: #666;
+    padding-top: 6.1rem;
+    padding-bottom: 2.2rem;
+    background: url() center .15rem no-repeat #fff;
+    background-size: 5rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/**
+ * 热门景点
+ */
+ .imgautosize{
+    height: 88px;
+ 	padding-right: 6px;
+ 	padding-left: 9px;
+ }
+.imgautosize img{
+	width:100%;height:100%;
+}
+.divheight
+{
+    margin-top:10px;
+}
+.spanposition{
+	top: -12px;
+    right: 10px;
+    color: #FF6600;
+    font-size: 1.6rem;
+    font-weight:bold;
+}
+.spanposition>i{
+    font-size: 1.3rem;
+    color: #666666;
+    font-style: normal;
+    font-weight:normal;
+}
+#hotspot ul{
+	margin-bottom: 0;
+}
+#hotspot ul li{
+	background-color:transparent;
+	border:0;
+	border-bottom: 1px solid #ddd;
+	padding: .7rem 1.2rem;
+}
+#hotspot ul li:last-child{
+	border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+#hotspot p{
+	font-size: 1.3rem;
+	color: #666666;
+}
+#hotspot .pr>p{
+ font-size: 1rem;
+ color: #AAAAAA;
+}
+#hotspot .colpdr{
+	padding-right: 1px;
+	padding-left: 0;
+}
+.marks .hui {
+    color: #d30775;
+    border: 1px solid #d30775;
+    border-radius: 1px;
+}
+#hotspot .more{
+	padding:1rem 0; 
+}
+
+
+
+nav {
+    padding: 10px;
+    border-width: 1px 0 0;
+    overflow-scrolling: touch;
+    display: block;
+    overflow-x: scroll;
+    background-color: #fff;
+}
+nav ul {
+    width: auto;
+    font-size: 0;
+    list-style: none;
+    white-space: nowrap;
+}
+nav ul li {
+    color: #666;
+    font-size: 12px;
+    border: 1px solid #666;
+    padding: 0 16px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 1px;
+    margin-right: 10px;
+    background: #fff;
+    display: inline-block;
+}
+
+/**
+ * 测试样式
+ */
+/*section{
+height: 200px;
+background-color: #fff;
+}
+section:nth-of-type(2n+1){
+	background-color: #f5f5f5;
+}*/

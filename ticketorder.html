@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<title>填写订单</title>
+	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/ticketorder.css">
+	<!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+	<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+       <script src="lib/html5shiv/html5shiv.min.js"></script>
+       <script src="lib/respond/respond.min.js"></script>
+   <![endif]-->
+</head>
+<body>
+	<!-- 购票信息 -->
+	<section id="ticinfo">
+		<div class="withespace">
+			<div class="list-group">
+				<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading">成人全日票</h4>
+					<p class="list-group-item-text">订票须知<span class="glyphicon glyphicon-menu-right menuright" aria-hidden="true"></span></p>
+				</a>
+			</div>
+			<div class="list-group pr">
+				<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading">游玩日期</h4>
+					<p class="list-group-item-text"><input type="text" placeholder="请选择游玩日期"></p>
+					<p>购买数量<i>每单最多预定5张</i></p>
+					<p class="pa ticketnumber">
+						<i>-</i>
+						<i><input type="text"></i>
+						<i>+</i>
+					</p>
+				</a>
+			</div>
+		</div>
+	</section>
+	<!-- /购票信息 -->
+	<!-- 用户信息 -->
+	<section id="userinfo">
+		<div class="withespace">
+			<div class="panel panel-default">
+				<div class="panel-heading">取票人信息</div>
+				<span class="usericon"></span>
+				<ul class="list-group">
+					<li class="list-group-item">
+						<div class="row">
+							<div class="col-xs-3">
+								<span>
+									姓&nbsp;&nbsp;&nbsp;&nbsp;名
+								</span>
+							</div>
+							<div class="col-xs-9"><input type="text" placeholder="必填"></div>
+						</div>
+					</li>
+					<li class="list-group-item"><div class="row">
+						<div class="col-xs-3"><span>手机号</span></div>
+						<div class="col-xs-5"><input type="text" placeholder="按收取票短信凭证"></div>
+						<div class="col-xs-4"><span class="valicode">发送验证码</span></div>
+					</div></li>
+					<li class="list-group-item"><div class="row">
+						<div class="col-xs-3"><span>验证码</span></div>
+						<div class="col-xs-9"><input type="text" placeholder="请输入短信验证码"></div>
+					</div></li>
+					<li class="list-group-item"><div class="row">
+						<div class="col-xs-3"><span>身份证</span></div>
+						<div class="col-xs-9"><input type="text" placeholder="用于景区入园等凭证"></div>
+					</div></li>
+					
+				</ul>
+			</div>
+		</div>
+		
+	</section>
+	<!-- /用户信息 -->
+	<!-- 其他信息 -->
+	<section id="otherinfo">
+		<div class="withespace">
+			<div class="list-group pr">
+				<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading">发票</h4>
+				</a>
+				<p class="pa">不需要<span class="glyphicon glyphicon-menu-right menuright" aria-hidden="true"></span></p>
+			</div>
+			<div>
+			<span><i>已阅读并同意</i>望路者预定条款</span>
+			</div>
+		</div>
+	</section>
+	<!-- /其他信息 -->
+	<!-- 提交 -->
+	<section id="otherinfo">
+		<div class="row">
+			<div class="col-xs-8">
+				<p>您还未选择游玩日期</p>
+				<!-- <i>应付</i>
+				<i>¥</i>
+				<i>444</i> -->
+			</div>
+			<div class="col-xs-4 sub">
+				提交
+			</div>
+		</div>
+	</section>
+	<!-- /提交 -->
+</body>
+</html>
