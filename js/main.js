@@ -1,8 +1,8 @@
 /*
  * @Author: yanh
  * @Date:   2018-05-08 10:23:35
- * @Last Modified by:   yanh
- * @Last Modified time: 2018-05-15 17:48:34
+ * @Last Modified by:   yanh19930226
+ * @Last Modified time: 2018-05-16 17:00:35
  */
 
 'use strict';
@@ -38,11 +38,20 @@ $(function() {
 	// topcontrol.style.bottom = '66px';
 
 /**
- * 模态框底部弹出方法
+ * 望路者模态框底部弹出方法
  */
-$('.menuright').click(function() {
+$('#notice').click(function() {
 	$('.modal')
 		.prop('class', 'modal fade')
 		.addClass($(this).data('direction'));
 	$('#myModal').modal('show');
-});
+})
+/**
+ * 门票详情模态框底部弹出方法
+ */
+$('.forcilck').click(function() {
+	$('.modal')
+		.prop('class', 'modal fade')
+		.addClass($(this).data('direction'));
+	$('#ticketModal').modal('show');
+})

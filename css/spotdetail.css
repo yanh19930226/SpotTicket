@@ -1,8 +1,8 @@
 /*
 * @Author: yanh
 * @Date:   2018-05-10 10:21:21
-* @Last Modified by:   yanh
-* @Last Modified time: 2018-05-15 17:50:33
+* @Last Modified by:   yanh19930226
+* @Last Modified time: 2018-05-16 17:47:46
 */
 /**
  * 景点信息
@@ -66,13 +66,11 @@
   font-weight: bold;
   color: #333;
 }
-
 #ticketlist > .container > .ul-wapper > .nav-tabs > li > a:hover {
   border-color: transparent;
   background-color: transparent;
   color: #000;
 }
-
 #ticketlist > .container > .ul-wapper > .nav-tabs > li.active {}
 
 #ticketlist > .container > .ul-wapper > .nav-tabs > li.active > a {
@@ -80,6 +78,7 @@
   border: 0;
   border-bottom: .2rem solid #00aafd;
 }
+
 #ticketlist>.container > .tab-content >.tab-pane>div{
     margin-bottom: 0;
     border-bottom: 1px solid #ddd;
@@ -89,7 +88,16 @@
     border-bottom: 1px solid #ddd;
     padding-bottom: 0;
 }
-
+#ticketlist>.container>.tab-content>.tab-pane>div>.infoleft>.action>a{
+   color:white;
+}
+#ticketlist>.container>.tab-content>.tab-pane>div>.infoleft>.action>a:hover{
+    text-decoration: none;
+}
+#ticketlist>.container>.tab-content>.tab-pane>div>.infoleft>.action>a:visited{
+    color:white;
+    text-decoration: none;
+}
 #ticketlist .menuright{
 	top: 4.8rem;
     left: 6rem;
@@ -162,9 +170,10 @@
 #other .spot-list>.spot-slide>a {
     margin-right: 2%;
     width: 38.4%;
-}
-#other .spot-list>.spot-slide a {
     display: inline-block;
+}
+#other .spot-list>.spot-slide>a:hover{
+    text-decoration: none;
 }
 #other .spot-list>.spot-slide>.list-wrap {
     width: auto;
@@ -182,10 +191,11 @@
 }
 #other .spot-list .spot-slide .spot-info span{
 	float: left;
-    color: #15BCD3;
-    font-size: 1rem;
+    color: #FF6600;
+    font-size: 1.5rem;
 }
 #other .spot-list .spot-slide .spot-info i{
+    color: #666;
 	font-style: normal;
 }
 #other .spot-list .spot-slide .list-wrap .spot-pic {
@@ -198,7 +208,14 @@
 /**
  * 站内链接
  */
-#link>div{
+#link .panel-heading{
+    border: 0;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+#link>.panel>.row{
     margin:0;
 }
 #link .link-item{
@@ -221,7 +238,6 @@
 	height: 60px;
 	line-height: 60px;
 	background-color: #EEEEF5;
-	margin-top: .4rem;
 	text-align: center;
 }
 #foot .foot-body span{
@@ -229,13 +245,142 @@
 }
 
 /** 
- * 模态框样式
+ * 模态框公共样式
  */
+.modal{
+    top:auto;
+}
 .modal.fade:not(.in).bottom .modal-dialog {
 -webkit-transform: translate3d(0, 25%, 0);
 transform: translate3d(0, 25%, 0);
 }
+.modal>.modal-dialog{
+    width: auto;
+    display: inline-block;
+}
+.modal>.modal-dialog>.modal-content>.modal-body{
+    height: 25rem;
+    overflow-y: scroll;
+}
+/** 
+ * 望路者品质文化之旅模态框样式
+ */
 #myModal>.modal-dialog>.modal-content>div{
     text-align: center;
+}
+#myModal>.modal-dialog>.modal-content>.modal-body>.wlz-modal-content{
+    text-align: left;
+    border-bottom: 1px solid #dddddd;
+}
+#myModal>.modal-dialog>.modal-content>.modal-header{
+     padding:.6rem;
+}
+#myModal>.modal-dialog>.modal-content>.modal-footer{
+   padding-top: .5rem;
+   border-top: 0;
+}
+#myModal>.modal-dialog>.modal-content>.modal-footer>.wlz-btn-submit{
+    width: 100%;
+    color:white;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+    background-color: #00aafd;
+}
+/** 
+ * 门票详情模态框样式
+*/
+#ticketModal>.modal-dialog>.modal-content>.modal-header{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-body>.contain-pannel{
+    border-bottom: 1px solid #EDEDED;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-body>.contain-pannel>.row{
+    text-align: left;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-body>.contain-pannel>.row>div:first-child{}
+#ticketModal>.modal-dialog>.modal-content>.modal-body>.contain-pannel>.row>div:first-child>.intro-tag{
+    border: 1px solid #ffb92b;
+    border-radius: 4px;
+    display:inline;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-body>.contain-pannel>.row>div:first-child>.intro-tag>span{
+    color: #F80;
+    font-size: 1.3rem;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-body>.contain-pannel>.row>div:last-child>p{
+    text-align: left;
+    color: #666;
+    font-size: 1.3rem;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-body>.same-info{
+    text-align: left;
+    border-bottom: 1px solid #EDEDED;
+
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-body>.same-info>h3{
+    margin: 10px 0;
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: bold;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-body>.same-info>p{
+    color: #666;
+    font-size: 1.3rem;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-body>.diff-info{
+
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-body>.diff-info>.row{
+    
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-body>.diff-info>.row{
+    
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-body>.diff-info>.row>div:first-child{
+    padding-right: 0;
+    padding-left: 0;
+    color: #666;
+    text-align: right;
+    font-size: 1.3rem;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-body>.diff-info>.row>div:last-child{
+    padding-left: 0;
+    padding-right: 0;
+    color: #666;
+    font-size: 1.3rem;
+    text-align: left;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-footer{
+    text-align: center;
+    padding: 0;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-footer>.row>div:first-child{
+    margin-top: .6rem;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-footer>.row>div:first-child>span{
+    color:#666;
+    font-size: 1.4rem;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-footer>.row>div:first-child>span>i{
+    font-style: normal;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-footer>.row>div:first-child>span>i:first-child{
+    color:#F80;
+    font-size: 1.8rem;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-footer>.row>div:first-child>span>i:last-child{
+    color:#666;
+    font-size: 1.3rem;
+}
+#ticketModal>.modal-dialog>.modal-content>.modal-footer>.row>div:last-child>button{
+    border: 0;
+    width: 100%;
+    border-radius: 0;
+    background-color: #00aafd;
+    color: #fff;
+    font-size: 1.7rem;
 }
 
