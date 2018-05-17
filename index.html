@@ -7,7 +7,7 @@
 
 	<title>门票首页</title>
 	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/spotTicketIndex.css">
 	<!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
 	<!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
     <!--[if lt IE 9]>
@@ -71,7 +71,7 @@
 			</div>
 			<div class="spot-list">
 				<div class="spot-slide">
-					<a href="#">
+					<a href="spotdetail.html">
 						<div class="list-wrap">
 							<div class="spot-pic" style="background-image: url(img/rqbw1.jpg)"></div>
 						</div>
@@ -82,7 +82,7 @@
 							</div>
 						</div>
 					</a>
-					<a href="#">
+					<a href="spotdetail.html">
 						<div class="list-wrap">
 							<div class="spot-pic" style="background-image: url(img/rqbw2.jpg)"></div>
 						</div>
@@ -93,7 +93,7 @@
 							</div>
 						</div>
 					</a>
-					<a href="#">
+					<a href="spotdetail.html">
 						<div class="list-wrap">
 							<div class="spot-pic" style="background-image: url(img/rqbw4.jpg)"></div>
 						</div>
@@ -104,7 +104,7 @@
 							</div>
 						</div>
 					</a>
-					<a href="#">
+					<a href="spotdetail.html">
 						<div class="list-wrap">
 							<div class="spot-pic" style="background-image: url(img/rqbw4.jpg)"></div>
 						</div>
@@ -115,7 +115,7 @@
 							</div>
 						</div>
 					</a>
-					<a href="#">
+					<a href="spotdetail.html">
 						<div class="list-wrap">
 							<div class="spot-pic" style="background-image: url(img/rqbw4.jpg)"></div>
 						</div>
@@ -126,7 +126,7 @@
 							</div>
 						</div>
 					</a>
-					<a href="#">
+					<a href="spotdetail.html">
 						<div class="list-wrap">
 							<div class="spot-pic" style="background-image: url(img/rqbw5.png)"></div>
 						</div>
@@ -150,22 +150,22 @@
 			</div>
 			<div class="iconHuadong">
 				<div class="theme-module">
-					<a href="#"><span style="background-image: url(img/zhuti-gzcl.png)">登山谷歌</span></a>
+					<a href="javascript:void(0);"><span style="background-image: url(img/zhuti-gzcl.png)">登山谷歌</span></a>
 				</div>
 				<div class="theme-module">
-					<a href="#"><span style="background-image: url(img/zhuti-gzcl.png)">观看村落</span></a>
+					<a href="javascript:void(0);"><span style="background-image: url(img/zhuti-gzcl.png)">观看村落</span></a>
 				</div>
 				<div class="theme-module">
-					<a href="#"><span style="background-image: url(img/zhuti-hbdy.png)">海边钓鱼</span></a>
+					<a href="javascript:void(0);"><span style="background-image: url(img/zhuti-hbdy.png)">海边钓鱼</span></a>
 				</div>
 				<div class="theme-module">
-					<a href="#"><span style="background-image: url(img/zhuti-hgss.png)">湖光山色</span></a>
+					<a href="javascript:void(0);"><span style="background-image: url(img/zhuti-hgss.png)">湖光山色</span></a>
 				</div>
 				<div class="theme-module">
-					<a href="#"><span style="background-image: url(img/zhuti-tttj.png)">天天特价</span></a>
+					<a href="javascript:void(0);"><span style="background-image: url(img/zhuti-tttj.png)">天天特价</span></a>
 				</div>
 				<div class="theme-module">
-					<a href="#"><span style="background-image: url(img/zhuti-ztly.png)">主题乐园</span></a>
+					<a href="javascript:void(0);"><span style="background-image: url(img/zhuti-ztly.png)">主题乐园</span></a>
 				</div>
 			</div>
 		</div>
@@ -179,7 +179,7 @@
 			</div>
 			<div>
 				<ul class="list-group">
-					<li class="list-group-item">
+					<li class="list-group-item" onclick="toSpotDetail()">
 						<div class="row">
 							<div class="col-xs-4 col-sm-2 imgautosize">
 								<a href="">
@@ -205,7 +205,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="list-group-item">
+					<li class="list-group-item" onclick="toSpotDetail()">
 						<div class="row">
 							<div class="col-xs-4 col-sm-2 imgautosize">
 								<a href="">
@@ -231,7 +231,7 @@
 							</div>
 						</div>
 					</li>
-					<li class="list-group-item">
+					<li class="list-group-item" onclick="toSpotDetail()">
 						<div class="row">
 							<div class="col-xs-4 col-sm-2 imgautosize">
 								<a href="">
@@ -260,9 +260,9 @@
 				</ul>
 			</div>
 			<div class="more tex-c">
-				<a href="#"><span>更多景点</span></a>
+				<a href="javascript:void(0);"><span>更多景点</span></a>
 			</div>
-			<a href="#qq" onclick="toTop()"></a>
+			<a href="javascript:void(0);" onclick="toTop()"></a>
 		</div>
 	</section>
 	<!-- 热门景点 -->
@@ -300,6 +300,6 @@
 	<script src="lib/jquery/jquery.js"></script>
 	<script src="lib/scrolltopcontrol/scrolltopcontrol.js"></script>
 	<script src="lib/bootstrap/js/bootstrap.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/spotticket.js"></script>
 </body>
 </html>

@@ -1,225 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>订单列表</title>
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/ticket.css" rel="stylesheet">
-    <style type="text/css">
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>订单列表</title>
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/ticket.css" rel="stylesheet">
 </head>
-<body> 
-<div class="">
-<div class="container">
-        <div class="row div_top" >
-                <div class="col-xs-4 col-md-4" style="float:left">
-                       <span style="float:left;margin-left: -10px;"class="glyphicon glyphicon-menu-left back_logo"</span>
-               </div>
-              <div class="col-xs-4 col-md-4">全部订单</div>     
+<body>
+  <div class="">
+    <div class="container">
+      <div class="row div_top">
+        <div class="col-xs-4 col-md-4" style="float:left">
+          <span style="float:left;margin-left: -10px;" class="glyphicon glyphicon-menu-left back_logo"></span>
         </div>
+        <div class="col-xs-4 col-md-4">全部订单</div>
+      </div>
 
-<div class="row"style="margin-top: 10px;"> 
-        <ul id="myTab" class="nav nav-tabs" >
-                <li class="active" style="width: 25%;text-align: center"><a href="#pay" data-toggle="tab" > 待付款 </a> 
-                </li>
-                <li style="width: 25%;text-align: center"><a href="#status" data-toggle="tab">未出行</a>
-                </li>
-                <li style="width: 25%;text-align: center"><a href="#refund" data-toggle="tab">退款中</a>
-                </li>
-                <li style="width: 25%;text-align: center"><a href="#all" data-toggle="tab">全部</a>
-                </li>
+      <div class="row" style="margin-top: 10px;">
+        <ul id="myTab" class="nav nav-tabs">
+          <li class="active" style="width: 25%;text-align: center">
+            <a href="#pay" data-toggle="tab"> 待付款 </a>
+          </li>
+          <li style="width: 25%;text-align: center">
+            <a href="#status" data-toggle="tab">未出行</a>
+          </li>
+          <li style="width: 25%;text-align: center">
+            <a href="#refund" data-toggle="tab">退款中</a>
+          </li>
+          <li style="width: 25%;text-align: center">
+            <a href="#all" data-toggle="tab">全部</a>
+          </li>
         </ul>
         <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade in active" id="pay">
-                    <!-- <p>未付款订单</p> -->
-                     <div class="container">  
-                            <div class="row">
-                               <div class="context"></div>
-                                   <div class="ticket_logo">
-                                     <p style="float: left;margin-left: 5px;"> <span  class="glyphicon glyphicon-picture" style="float:left;"> 门票</span></p>
-                                     <span class="pay_logo"> 待支付</span>
-                                   </div>
-                            </div>
-                       <hr  class="hr">
-                           <div class="row">
-                               <div class="travel">
-                                         <span style="float:left">平潭岛海坛古城</span>
-                                         <span class="price_logo">￥<span class="price">39</span></span>
-                                </div>
-                               <div style="clear:both;margin: 10px;">
-                                       <span class="count">数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp量: <span>1</span>份</span>
-                                       <span class="count">游玩日期: <span>2018-05-19</span></span>
-                               </div>   
-                               <div class="btn_bottom">
-                                       <button type="button" class="btn btn-danger btn_order"data-toggle="modal" data-target=".bs-example-modal-xs">取消订单</button>
-                                       <button type="button" class="btn btn-danger btn_pay">立即支付</button>
-                               </div>
-                           </div>
-                       </div>                    
+          <div class="tab-pane fade in active" id="pay">
+            <!-- <p>未付款订单</p> -->
+            <div class="container">
+              <div class="row">
+                <div class="context"></div>
+                <div class="ticket_logo">
+                  <p style="float: left;margin-left: 5px;">
+                    <span class="glyphicon glyphicon-picture" style="float:left;">
+                    门票</span>
+                  </p>
+                  <span class="pay_logo"> 待支付</span>
                 </div>
-            <div class="tab-pane fade" id="status">
-                    <!-- <p>未出行订单</p> -->
-                     <div class="container"> 
-                                <div class="row">
-                                   <div class="context"></div>
-                                       <div class="ticket_logo">
-                                         <p style="float: left;margin-left: 5px;"> <span  class="glyphicon glyphicon-picture" style="float:left;"> 门票</span></p>
-                                         <span class="pay_logo"> 未出行</span>
-                                       </div>
-                                </div>
-                     <hr  class="hr">
-                            <div class="row">
-                                   <div class="travel">
-                                             <span style="float:left">平潭岛海坛古城</span>
-                                             <span class="price_logo">￥<span class="price">39</span></span>
-                                    </div>
-                                   <div style="clear:both;margin: 10px;">
-                                           <span class="count">数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp量: <span>1</span>份</span>
-                                           <span class="count">游玩日期: <span>2018-05-19</span></span>
-                                   </div>   
-                                   <div class="btn_bottom">
-                                           <!-- <button type="button" class="btn btn-danger button_order">取消订单</button>
-                                           <button type="button" class="btn btn-danger button_pay">立即支付</button> -->
-                                           <div style=" margin-top: -10px;"><span class="ticket_status">未出行</span></div>
-                                   </div>
-                             </div>
-                    </div> 
-             </div>
-            <div class="tab-pane fade" id="refund">
-                    <!-- 退款中订单</p> -->
-                    <div class="container"> 
-                            <div class="row">
-                               <div class="context"></div>
-                                   <div class="ticket_logo">
-                                     <p style="float: left;margin-left: 5px;"> <span  class="glyphicon glyphicon-picture" style="float:left;"> 门票</span></p>
-                                     <span class="pay_logo"> 退款中</span>
-                                   </div>
-                            </div>
-                     <hr  class="hr">
-                           <div class="row">
-                               <div class="travel">
-                                         <span style="float:left">平潭岛海坛古城</span>
-                                         <span class="price_logo">￥<span class="price">39</span></span>
-                                </div>
-                               <div style="clear:both;margin: 10px;">
-                                       <span class="count">数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp量: <span>1</span>份</span>
-                                       <span class="count">游玩日期: <span>2018-05-19</span></span>
-                               </div>   
-                               <div class="btn_bottom">
-                                       <!-- <button type="button" class="btn btn-danger button_order">取消订单</button>
-                                       <button type="button" class="btn btn-danger button_pay">立即支付</button> -->
-                                       <div style=" margin-top: -10px;"><span class="ticket_status">退款中</span></div>
-                               </div>
-                           </div>
-                    </div> 
+              </div>
+              <hr class="hr">
+              <div class="row">
+                <div class="travel">
+                  <span style="float:left">平潭岛海坛古城</span>
+                  <span class="price_logo">￥
+                    <span class="price">39</span>
+                  </span>
+                </div>
+                <div style="clear:both;margin: 10px;">
+                  <span class="count">数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp量:
+                    <span>1</span>份</span>
+                    <span class="count">游玩日期:
+                      <span>2018-05-19</span>
+                    </span>
+                  </div>
+                  <div class="btn_bottom">
+                    <button type="button" class="btn btn-danger btn_order" data-toggle="modal" data-target=".bs-example-modal-xs">取消订单</button>
+                    <button type="button" class="btn btn-danger btn_pay">立即支付</button>
+                  </div>
+                </div>
+              </div>
             </div>
-              <div class="tab-pane fade" id="all">
-                    <!-- 全部订单 </p> -->
-                <div class="container"> 
-                            <div class="row">
-                               <div class="context"></div>
-                                   <div class="ticket_logo">
-                                     <p style="float: left;margin-left: 5px;"> <span  class="glyphicon glyphicon-picture" style="float:left;"> 门票</span></p>
-                                     <span class="pay_logo"> 待支付</span>
-                                   </div>
-                            </div>
-                    <hr  class="hr">
-                           <div class="row">
-                               <div class="travel">
-                                         <span style="float:left">平潭岛海坛古城</span>
-                                         <span class="price_logo">￥<span class="price">39</span></span>
-                                </div>
-                               <div style="clear:both;margin: 10px;">
-                                       <span class="count">数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp量: <span>1</span>份</span>
-                                       <span class="count">游玩日期: <span>2018-05-19</span></span>
-                               </div>   
-                               <div class="btn_bottom">
-                                       <button type="button" class="btn btn-danger btn_order" data-toggle="modal" data-target=".bs-example-modal-xs">取消订单</button>
-                                       <button type="button" class="btn btn-danger btn_pay">立即支付</button>
-                               </div>
-                           </div>
-                 </div>
-                  <!-- <p>未出行订单</p> -->
-                 <div class="container"> 
-                        <div class="row">
-                           <div class="context"></div>
-                               <div class="ticket_logo">
-                                 <p style="float: left;margin-left: 5px;"> <span  class="glyphicon glyphicon-picture" style="float:left;"> 门票</span></p>
-                                 <span class="pay_logo"> 未出行</span>
-                               </div>
-                        </div>
-                <hr  class="hr">
-                    <div class="row">
-                           <div class="travel">
-                                     <span style="float:left">平潭岛海坛古城</span>
-                                     <span class="price_logo">￥<span class="price">39</span></span>
-                            </div>
-                           <div style="clear:both;margin: 10px;">
-                                   <span class="count">数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp量: <span>1</span>份</span>
-                                   <span class="count">游玩日期: <span>2018-05-19</span></span>
-                           </div>   
-                           <div class="btn_bottom">
-                                   <!-- <button type="button" class="btn btn-danger button_order">取消订单</button>
-                                   <button type="button" class="btn btn-danger button_pay">立即支付</button> -->
-                                   <div style=" margin-top: -10px;"><span class="ticket_status">未出行</span></div>
-                           </div>
-                     </div>
-            </div> 
-                 <!-- 退款中订单</p> -->
-                    <div class="container"> 
-                            <div class="row">
-                               <div class="context"></div>
-                                   <div class="ticket_logo">
-                                     <p style="float: left;margin-left: 5px;"> <span  class="glyphicon glyphicon-picture" style="float:left;"> 门票</span></p>
-                                     <span class="pay_logo"> 退款中</span>
-                                   </div>
-                            </div>
-                     <hr  class="hr">
-                           <div class="row">
-                               <div class="travel">
-                                         <span style="float:left">平潭岛海坛古城</span>
-                                         <span class="price_logo">￥<span class="price">39</span></span>
-                                </div>
-                               <div style="clear:both;margin: 10px;">
-                                       <span class="count">数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp量: <span>1</span>份</span>
-                                       <span class="count">游玩日期: <span>2018-05-19</span></span>
-                               </div>   
-                               <div class="btn_bottom">
-                                       <!-- <button type="button" class="btn btn-danger button_order">取消订单</button>
-                                       <button type="button" class="btn btn-danger button_pay">立即支付</button> -->
-                                       <div style=" margin-top: -10px;"><span class="ticket_status">退款中</span></div>
-                               </div>
-                           </div>
-                    </div> 
-              </div>       
-            </div>  
-       </div>
-    </div>
-</div>
- 
+            <div class="tab-pane fade" id="status">
+              <!-- <p>未出行订单</p> -->
+              <div class="container">
+                <div class="row">
+                  <div class="context"></div>
+                  <div class="ticket_logo">
+                    <p style="float: left;margin-left: 5px;">
+                      <span class="glyphicon glyphicon-picture" style="float:left;">
+                      门票</span>
+                    </p>
+                    <span class="pay_logo"> 未出行</span>
+                  </div>
+                </div>
+                <hr class="hr">
+                <div class="row">
+                  <div class="travel">
+                    <span style="float:left">平潭岛海坛古城</span>
+                    <span class="price_logo">￥
+                      <span class="price">39</span>
+                    </span>
+                  </div>
+                  <div style="clear:both;margin: 10px;">
+                    <span class="count">数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp量:
+                      <span>1</span>份</span>
+                      <span class="count">游玩日期:
+                        <span>2018-05-19</span>
+                      </span>
+                    </div>
+                    <div class="btn_bottom">
+                                                                <!-- <button type="button" class="btn btn-danger button_order">取消订单</button>
+                                                                  <button type="button" class="btn btn-danger button_pay">立即支付</button> -->
+                                                                  <div style=" margin-top: -10px;">
+                                                                    <span class="ticket_status">未出行</span>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <div class="tab-pane fade" id="refund">
+                                                            <!-- 退款中订单</p> -->
+                                                            <div class="container">
+                                                              <div class="row">
+                                                                <div class="context"></div>
+                                                                <div class="ticket_logo">
+                                                                  <p style="float: left;margin-left: 5px;">
+                                                                    <span class="glyphicon glyphicon-picture" style="float:left;">
+                                                                    门票</span>
+                                                                  </p>
+                                                                  <span class="pay_logo"> 退款中</span>
+                                                                </div>
+                                                              </div>
+                                                              <hr class="hr">
+                                                              <div class="row">
+                                                                <div class="travel">
+                                                                  <span style="float:left">平潭岛海坛古城</span>
+                                                                  <span class="price_logo">￥
+                                                                    <span class="price">39</span>
+                                                                  </span>
+                                                                </div>
+                                                                <div style="clear:both;margin: 10px;">
+                                                                  <span class="count">数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp量:
+                                                                    <span>1</span>份</span>
+                                                                    <span class="count">游玩日期:
+                                                                      <span>2018-05-19</span>
+                                                                    </span>
+                                                                  </div>
+                                                                  <div class="btn_bottom">
+                                                                <!-- <button type="button" class="btn btn-danger button_order">取消订单</button>
+                                                                  <button type="button" class="btn btn-danger button_pay">立即支付</button> -->
+                                                                  <div style=" margin-top: -10px;">
+                                                                    <span class="ticket_status">退款中</span>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <div class="tab-pane fade" id="all">
+                                                            <!-- 全部订单 </p> -->
+                                                            <div class="container">
+                                                              <div class="row">
+                                                                <div class="context"></div>
+                                                                <div class="ticket_logo">
+                                                                  <p style="float: left;margin-left: 5px;">
+                                                                    <span class="glyphicon glyphicon-picture" style="float:left;">
+                                                                    门票</span>
+                                                                  </p>
+                                                                  <span class="pay_logo"> 待支付</span>
+                                                                </div>
+                                                              </div>
+                                                              <hr class="hr">
+                                                              <div class="row">
+                                                                <div class="travel">
+                                                                  <span style="float:left">平潭岛海坛古城</span>
+                                                                  <span class="price_logo">￥
+                                                                    <span class="price">39</span>
+                                                                  </span>
+                                                                </div>
+                                                                <div style="clear:both;margin: 10px;">
+                                                                  <span class="count">数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp量:
+                                                                    <span>1</span>份</span>
+                                                                    <span class="count">游玩日期:
+                                                                      <span>2018-05-19</span>
+                                                                    </span>
+                                                                  </div>
+                                                                  <div class="btn_bottom">
+                                                                    <button type="button" class="btn btn-danger btn_order" data-toggle="modal" data-target=".bs-example-modal-xs">取消订单</button>
+                                                                    <button type="button" class="btn btn-danger btn_pay">立即支付</button>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                              <!-- <p>未出行订单</p> -->
+                                                              <div class="container">
+                                                                <div class="row">
+                                                                  <div class="context"></div>
+                                                                  <div class="ticket_logo">
+                                                                    <p style="float: left;margin-left: 5px;">
+                                                                      <span class="glyphicon glyphicon-picture" style="float:left;">
+                                                                      门票</span>
+                                                                    </p>
+                                                                    <span class="pay_logo"> 未出行</span>
+                                                                  </div>
+                                                                </div>
+                                                                <hr class="hr">
+                                                                <div class="row">
+                                                                  <div class="travel">
+                                                                    <span style="float:left">平潭岛海坛古城</span>
+                                                                    <span class="price_logo">￥
+                                                                      <span class="price">39</span>
+                                                                    </span>
+                                                                  </div>
+                                                                  <div style="clear:both;margin: 10px;">
+                                                                    <span class="count">数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp量:
+                                                                      <span>1</span>份</span>
+                                                                      <span class="count">游玩日期:
+                                                                        <span>2018-05-19</span>
+                                                                      </span>
+                                                                    </div>
+                                                                    <div class="btn_bottom">
+                                                                <!-- <button type="button" class="btn btn-danger button_order">取消订单</button>
+                                                                  <button type="button" class="btn btn-danger button_pay">立即支付</button> -->
+                                                                  <div style=" margin-top: -10px;">
+                                                                    <span class="ticket_status">未出行</span>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                            <!-- 退款中订单</p> -->
+                                                            <div class="container">
+                                                              <div class="row">
+                                                                <div class="context"></div>
+                                                                <div class="ticket_logo">
+                                                                  <p style="float: left;margin-left: 5px;">
+                                                                    <span class="glyphicon glyphicon-picture" style="float:left;">
+                                                                    门票</span>
+                                                                  </p>
+                                                                  <span class="pay_logo"> 退款中</span>
+                                                                </div>
+                                                              </div>
+                                                              <hr class="hr">
+                                                              <div class="row">
+                                                                <div class="travel">
+                                                                  <span style="float:left">平潭岛海坛古城</span>
+                                                                  <span class="price_logo">￥
+                                                                    <span class="price">39</span>
+                                                                  </span>
+                                                                </div>
+                                                                <div style="clear:both;margin: 10px;">
+                                                                  <span class="count">数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp量:
+                                                                    <span>1</span>份</span>
+                                                                    <span class="count">游玩日期:
+                                                                      <span>2018-05-19</span>
+                                                                    </span>
+                                                                  </div>
+                                                                  <div class="btn_bottom">
+                                                                <!-- <button type="button" class="btn btn-danger button_order">取消订单</button>
+                                                                  <button type="button" class="btn btn-danger button_pay">立即支付</button> -->
+                                                                  <div style=" margin-top: -10px;">
+                                                                    <span class="ticket_status">退款中</span>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
 
 
-<!-- Modal -->
-<div class="modal fade bs-example-modal-xs" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-        <div class="modal-dialog modal-xs model_center" role="document">
-          <div class="modal-content">
-                <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title">取消订单</h4>
-                </div>
-                <div class="modal-body">
-                       <span style="display:block;text-align: center;font-size: 20px;">确定要取消订单吗？</span>
-                </div>
-                <div class="modal-footer">
-                        <button type="button" class="btn btn-default btn_order" data-dismiss="modal">取消</button>
-                        <button type="button" class="btn btn-danger btn_pay">确定</button>
-                </div>
-          </div>
-        </div>
- </div>
-</body>
-    <script src="lib/jquery/jquery.js"></Script>
-    <script src="lib/bootstrap/js/bootstrap.js"></Script>
-</html>
+                                                  <!-- Modal -->
+                                                  <div class="modal fade bs-example-modal-xs" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                                                    <div class="modal-dialog modal-xs model_center" role="document">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                          </button>
+                                                          <h4 class="modal-title">取消订单</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                          <span style="display:block;text-align: center;font-size: 20px;">确定要取消订单吗？</span>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-default btn_order" data-dismiss="modal">取消</button>
+                                                          <button type="button" class="btn btn-danger btn_pay">确定</button>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </body>
+                                                <script src="jquery/jquery-3.2.1.min.js"></Script>
+                                                  <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></Script>
+                                                    </html>

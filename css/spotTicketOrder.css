@@ -1,0 +1,142 @@
+/*
+* @Author: yanh
+* @Date:   2018-05-10 16:23:52
+* @Last Modified by:   yanh19930226
+* @Last Modified time: 2018-05-17 17:51:15
+*/
+
+section h4{
+	font-size: 1.6rem;
+	font-weight: bold;
+}
+/**
+ * 购票信息
+ */
+.list-group {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.withespace{
+    padding: 1rem;
+    padding-top: 2rem;
+    background-color: #EEEEF5;
+}
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom: 0;
+}
+.list-group-item:last-child {
+    margin-bottom: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+#ticinfo>.withespace>div:first-child>.list-group-item{
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+#ticinfo>.withespace>div:last-child>.list-group-item:last-child{
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+#ticinfo>.withespace>div:last-child>.list-group-item>.date input{
+    border:0;
+}
+#ticinfo>.withespace>div:last-child>.list-group-item>.num>.cul-price{
+    position: absolute;
+    bottom: 11%;
+    right: 4%;
+    border: solid 1px #e6e6e6;
+    border-radius: 1rem;
+    width: 37%;
+    overflow: hidden;
+    text-align: center;
+    line-height: 2.6rem;
+}
+#ticinfo>.withespace>div:last-child>.list-group-item>.num>div:first-child>i{
+    font-style: normal;
+    color:#6C6C6C;
+    font-size: 1rem;
+    
+}
+#ticinfo>.withespace>div:last-child>.list-group-item>.num>.cul-price>i:first-child{
+    font-size: 3rem;
+    float: left;
+    width: 33%;
+}
+#ticinfo>.withespace>div:last-child>.list-group-item>.num>.cul-price>i:last-child{
+    font-size: 3rem;
+    float: right;
+    width: 33%;
+}
+#ticinfo>.withespace>div:last-child>.list-group-item>.num>.cul-price>span{
+    float: left;
+    font-size: 1.8rem;
+    border-left: solid 1px #ddd;
+    border-right: solid 1px #ddd;
+    width: 33%;
+}
+
+
+/**
+ * 用户信息
+ */
+#userinfo input{
+	border: 0;
+	outline:none;
+}
+#userinfo .panel-heading{
+	border-bottom: 0;
+	padding-left: 1rem;
+    padding-top: .7rem;
+	font-weight: bold;
+	font-size: 1.5rem;
+	background-color: transparent;
+}
+#userinfo .usericon{
+    position: absolute;
+    right: .8rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    top: 0.8rem;
+    background-size: 100%;
+    background-image: url(//pics.lvjs.com.cn/mobile/coding/v750/ticket/img/userContacts.png);
+}
+#userinfo .valicode{
+	font-size: 1px;
+}
+/**
+ * 提交
+ */
+#otherinfo{
+    background-color: #EEEEF5;
+}
+#otherinfo p{
+	top: .8rem;
+    right: .7rem;
+}
+#otherinfo>.withespace>div:last-child{
+	margin-top: 1rem;
+}
+#otherinfo>.row{
+    position: fixed;
+    bottom: 1px;
+}
+#otherinfo>.row>div:first-child{
+
+}
+#otherinfo>.row>div:last-child{
+
+}
+#otherinfo>.row>div:last-child>button{
+   background-color: #15BCD3;
+   width: 100%;
+}

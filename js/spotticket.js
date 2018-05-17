@@ -2,7 +2,7 @@
  * @Author: yanh
  * @Date:   2018-05-08 10:23:35
  * @Last Modified by:   yanh19930226
- * @Last Modified time: 2018-05-16 17:00:35
+ * @Last Modified time: 2018-05-17 09:08:33
  */
 
 'use strict';
@@ -13,7 +13,7 @@ $(function() {
 	 */
 	var $ulContainer = $('.nav-tabs');
 	// 获取所有子元素的宽度和
-	var width = 30; // 因为原本ul上有padding-left
+	var width = 60; // 因为原本ul上有padding-left
 	// console.log($ulContainer.children());
 	// 遍历子元素
 	$ulContainer.children().each(function(index, element) {
@@ -55,3 +55,17 @@ $('.forcilck').click(function() {
 		.addClass($(this).data('direction'));
 	$('#ticketModal').modal('show');
 })
+/**
+ * 首页景点列表跳转详情页方法
+ * @return {[type]} [description]
+ */
+function toSpotDetail(){
+  window.location.href="spotdetail.html";
+}
+/**
+ * 立即预定
+ * @return {[type]} [description]
+ */
+function goToBook(){
+	window.location.href="ticketorder.html";
+}
